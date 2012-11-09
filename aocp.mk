@@ -4,7 +4,13 @@ $(call inherit-product, vendor/aocp/configs/gsm.mk)
 # Release Name
 PRODUCT_RELEASE_NAME := DHD
 
-TARGET_BOOTANIMATION_NAME := bootanimation_480_800
+#OTA
+PRODUCT_COPY_FILES += \
+        vendor/aocp/prebuilt/common/app/hdpi/AoCPOTA.apk:system/app/AoCPOTA.apk
+
+#bootanimation
+PRODUCT_COPY_FILES += \
+        vendor/aocp/prebuilt/bootanimation/bootanimation_480_800.zip:system/media/bootanimation.zip
 
 # Inherit CM stuff
 $(call inherit-product, vendor/aocp/configs/common_phone.mk)
