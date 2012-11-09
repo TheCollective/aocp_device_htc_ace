@@ -2,10 +2,6 @@
 	{
 		"repository":  "proprietary_vendor_qcom",
 		"target_path": "vendor/qcom/proprietary"
-	},
-	{
-		"repository":  "android_kernel_htc_msm7x30",
-		"target_path": "kernel/htc/msm7x30"
         },
         {
                 "repository": "aocp_device_htc-common",
